@@ -8,4 +8,16 @@ public class Constant {
 
     }
 
+    public static class Urls{
+
+        public static final String TOUCH_HOME_PAGE = "https://touch.com.ua/";
+
+    }
+
+    public static class PageItems{
+
+        public static final int BASIC_AMOUNT_OF_CARDS = 30;
+
+    }
+
 }
