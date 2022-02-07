@@ -13,6 +13,7 @@ public class TouchHomePage extends BasePage {
 
     private final By searchingField = By.xpath("//input[@id='searchQuery']");
     private final By findButton = By.xpath("//input[@id='goSearch']");
+    private final By appleFromCategoryButton = By.xpath("//li[@class='eChild'][1]");
 
     public TouchHomePage inputToSearch(String input){
         WebElement searchField = driver.findElement(searchingField);
@@ -25,6 +26,13 @@ public class TouchHomePage extends BasePage {
     public TouchHomePage clickToSearch(){
         WebElement searchButton = driver.findElement(findButton);
         waitElementIsVisible(searchButton).click();
+
+        return this;
+    }
+
+    public TouchHomePage goToApplePage(){
+        WebElement applePageButton = driver.findElement(appleFromCategoryButton);
+        waitElementIsVisible(applePageButton).click();
 
         return this;
     }

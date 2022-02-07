@@ -1,2 +1,4 @@
 tests/search_iphone/positive/SearchIphoneTest.class
+tests/applePageTest/positive/OpenApplePageTest.class
+tests/applePageTest/positive/AppleListOfProductsTest.class
 tests/base/BaseTest.class

@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import pages.apple.TouchApplePage;
 import pages.base.BasePage;
 import pages.listing.TouchListingPage;
 import pages.touch_home.TouchHomePage;
@@ -19,7 +20,7 @@ public class BaseTest {
     protected BasePage basePage = new BasePage(driver);
     protected TouchHomePage touchHomePage = new TouchHomePage(driver);
     protected TouchListingPage touchListingPage =  new TouchListingPage(driver);
-
+    protected TouchApplePage touchApplePage = new TouchApplePage(driver);
 
     @AfterTest  //TestNG - аннотация - действие совершается после каждого теста
     public void clearCookiesAndLocalStorage(){
@@ -35,6 +36,11 @@ public class BaseTest {
         if (HOLD_BROWSER_OPEN){
             driver.quit();
         }
+    }
+
+    @AfterTest
+    public void closeBrowser(){
+        driver.quit();
     }
 
 }

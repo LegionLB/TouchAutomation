@@ -1,1 +1,0 @@
-{"uuid":"39e41f46-f59a-4da3-bc4f-af905a35c698","name":"Surefire test","children":["84f03a98-0dc2-4f5b-9206-0930cf7085e5"],"befores":[],"afters":[{"name":"clearCookiesAndLocalStorage","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1644215945628,"stop":1644215945650}],"start":1644215940974,"stop":1644215945650}

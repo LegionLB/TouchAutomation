@@ -4,6 +4,7 @@ pages/listing/TouchListingPage.class
 common/CommonActions.class
 constants/Constant$PageItems.class
 constants/Constant$TimeoutVariable.class
+pages/apple/TouchApplePage.class
 pages/base/BasePage.class
 pages/touch_home/TouchHomePage.class
 common/Config.class

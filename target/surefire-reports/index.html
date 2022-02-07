@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.applePageTest.positive.OpenApplePageTest" class="method navigator-link" hash-for-method="checkIsItApplePage">checkIsItApplePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="tests.search_iphone.positive.SearchIphoneTest" class="method navigator-link" hash-for-method="checkIsRedirectToListing">checkIsRedirectToListing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.applePageTest.positive.AppleListOfProductsTest" class="method navigator-link" hash-for-method="checkThatAllProductsHasAWordAppleInName">checkThatAllProductsHasAWordAppleInName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -122,6 +132,21 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.applePageTest.positive.AppleListOfProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkThatAllProductsHasAWordAppleInName">
+                  </a> <!-- checkThatAllProductsHasAWordAppleInName -->
+                  <span class="method-name">checkThatAllProductsHasAWordAppleInName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.search_iphone.positive.SearchIphoneTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,6 +155,21 @@
                   <a name="checkIsRedirectToListing">
                   </a> <!-- checkIsRedirectToListing -->
                   <span class="method-name">checkIsRedirectToListing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.applePageTest.positive.OpenApplePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIsItApplePage">
+                  </a> <!-- checkIsItApplePage -->
+                  <span class="method-name">checkIsItApplePage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,6 +185,8 @@
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;tests.applePageTest.positive.AppleListOfProductsTest&quot;/&gt;
+      &lt;class name=&quot;tests.applePageTest.positive.OpenApplePageTest&quot;/&gt;
       &lt;class name=&quot;tests.search_iphone.positive.SearchIphoneTest&quot;/&gt;
       &lt;class name=&quot;tests.base.BaseTest&quot;/&gt;
     &lt;/classes&gt;
@@ -160,7 +202,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,16 +228,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkIsRedirectToListing')
-data.setCell(0, 2, 'tests.search_iphone.positive.SearchIphoneTest')
-data.setCell(0, 3, 4562);
+data.setCell(0, 1, 'checkIsItApplePage')
+data.setCell(0, 2, 'tests.applePageTest.positive.OpenApplePageTest')
+data.setCell(0, 3, 8458);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkThatAllProductsHasAWordAppleInName')
+data.setCell(1, 2, 'tests.applePageTest.positive.AppleListOfProductsTest')
+data.setCell(1, 3, 4811);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkIsRedirectToListing')
+data.setCell(2, 2, 'tests.search_iphone.positive.SearchIphoneTest')
+data.setCell(2, 3, 4608);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -210,15 +260,39 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.search_iphone.positive.SearchIphoneTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">clearCookiesAndLocalStorage</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+                <span class="ignored-method-name">close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.applePageTest.positive.OpenApplePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">close</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+                <span class="ignored-method-name">clearCookiesAndLocalStorage</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.base.BaseTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">clearCookiesAndLocalStorage</span>
                 <br/>
                 <span class="ignored-method-name">close</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -230,18 +304,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">tests.applePageTest.positive.AppleListOfProductsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkThatAllProductsHasAWordAppleInName</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.applePageTest.positive.OpenApplePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkIsItApplePage</span>
+                <span class="method-start">4863 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">tests.search_iphone.positive.SearchIphoneTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">checkIsRedirectToListing</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">13324 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.applePageTest.positive.AppleListOfProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">clearCookiesAndLocalStorage</span>
-                <span class="method-start">4618 ms</span>
+                <span class="method-start">17935 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">17963 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">9684 ms</span>
+                <span class="method-start">23146 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

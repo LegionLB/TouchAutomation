@@ -2,5 +2,6 @@
 /Users/legion/IdeaProjects/TouchAutomation/src/main/java/pages/base/BasePage.java
 /Users/legion/IdeaProjects/TouchAutomation/src/main/java/constants/Constant.java
 /Users/legion/IdeaProjects/TouchAutomation/src/main/java/common/Config.java
+/Users/legion/IdeaProjects/TouchAutomation/src/main/java/pages/apple/TouchApplePage.java
 /Users/legion/IdeaProjects/TouchAutomation/src/main/java/pages/listing/TouchListingPage.java
 /Users/legion/IdeaProjects/TouchAutomation/src/main/java/pages/touch_home/TouchHomePage.java

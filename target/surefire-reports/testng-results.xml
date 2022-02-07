@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="9" total="12" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-07T08:39:00 EET" name="Surefire suite" finished-at="2022-02-07T08:39:05 EET" duration-ms="4677">
+  <suite started-at="2022-02-07T17:07:23 EET" name="Surefire suite" finished-at="2022-02-07T17:07:41 EET" duration-ms="18106">
     <groups>
     </groups>
-    <test started-at="2022-02-07T08:39:00 EET" name="Surefire test" finished-at="2022-02-07T08:39:05 EET" duration-ms="4677">
-      <class name="tests.search_iphone.positive.SearchIphoneTest">
-        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.search_iphone.positive.SearchIphoneTest@106cd9c8]" started-at="2022-02-07T08:39:01 EET" name="checkIsRedirectToListing" finished-at="2022-02-07T08:39:05 EET" duration-ms="4562" status="PASS">
+    <test started-at="2022-02-07T17:07:23 EET" name="Surefire test" finished-at="2022-02-07T17:07:41 EET" duration-ms="18106">
+      <class name="tests.applePageTest.positive.AppleListOfProductsTest">
+        <test-method signature="checkThatAllProductsHasAWordAppleInName()[pri:0, instance:tests.applePageTest.positive.AppleListOfProductsTest@113eed88]" started-at="2022-02-07T17:07:23 EET" name="checkThatAllProductsHasAWordAppleInName" finished-at="2022-02-07T17:07:28 EET" duration-ms="4811" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkIsRedirectToListing -->
-        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.search_iphone.positive.SearchIphoneTest@106cd9c8]" started-at="2022-02-07T08:39:05 EET" name="clearCookiesAndLocalStorage" finished-at="2022-02-07T08:39:05 EET" duration-ms="23" status="PASS">
+        </test-method> <!-- checkThatAllProductsHasAWordAppleInName -->
+        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.applePageTest.positive.AppleListOfProductsTest@113eed88]" started-at="2022-02-07T17:07:41 EET" name="clearCookiesAndLocalStorage" finished-at="2022-02-07T17:07:41 EET" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookiesAndLocalStorage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.search_iphone.positive.SearchIphoneTest@106cd9c8]" started-at="2022-02-07T08:39:10 EET" name="close" finished-at="2022-02-07T08:39:10 EET" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.applePageTest.positive.AppleListOfProductsTest@113eed88]" started-at="2022-02-07T17:07:41 EET" name="closeBrowser" finished-at="2022-02-07T17:07:41 EET" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.applePageTest.positive.AppleListOfProductsTest@113eed88]" started-at="2022-02-07T17:07:46 EET" name="close" finished-at="2022-02-07T17:07:46 EET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
+      </class> <!-- tests.applePageTest.positive.AppleListOfProductsTest -->
+      <class name="tests.applePageTest.positive.OpenApplePageTest">
+        <test-method signature="checkIsItApplePage()[pri:0, instance:tests.applePageTest.positive.OpenApplePageTest@29090809]" started-at="2022-02-07T17:07:28 EET" name="checkIsItApplePage" finished-at="2022-02-07T17:07:36 EET" duration-ms="8458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIsItApplePage -->
+      </class> <!-- tests.applePageTest.positive.OpenApplePageTest -->
+      <class name="tests.search_iphone.positive.SearchIphoneTest">
+        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.search_iphone.positive.SearchIphoneTest@67e6eb52]" started-at="2022-02-07T17:07:36 EET" name="checkIsRedirectToListing" finished-at="2022-02-07T17:07:41 EET" duration-ms="4608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIsRedirectToListing -->
       </class> <!-- tests.search_iphone.positive.SearchIphoneTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
