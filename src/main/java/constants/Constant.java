@@ -20,4 +20,16 @@ public class Constant {
 
     }
 
+    public static class SearchItems{
+
+        public static final String IPHONE = "iPhone";
+
+    }
+
+    public static class SearchingResults{
+
+        public static final String APPLE_PAGE_SEARCH_RESULT = "Техника Apple";
+
+    }
+
 }

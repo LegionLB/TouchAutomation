@@ -21,7 +21,7 @@ public class CommonActions {
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--headless");
-                driver = new ChromeDriver(options);
+                driver = new ChromeDriver();
                 break;
             default:
                 Assert.fail("Incorrect platform or browser name: " + PLATFORM_AND_BROWSER); // обрабатываем ошибку

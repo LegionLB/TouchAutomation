@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Тестирование Поиск">
+        <classes>
+            <class name="tests.search.positive.SearchTest"/>
+        </classes>
+    </test>
+    <test name="Тестирование Apple страницы">
+        <classes>
+            <class name="tests.applePageTest.positive.ApplePageTest"/>
+        </classes>
+    </test>
+<!--    <test name="Все товары на странице это продукция Apple">-->
+<!--        <classes>-->
+<!--            <class name="tests.applePageTest.positive.AppleListOfProductsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

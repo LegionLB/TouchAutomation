@@ -1,5 +1,6 @@
 package pages.base;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +16,7 @@ public class BasePage {
         this.driver = driver;
     }
 
+    @Step("Открыть страницу {url}")
     public void open(String url) {
         driver.get(url);
     }

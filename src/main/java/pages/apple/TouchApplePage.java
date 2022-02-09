@@ -1,5 +1,6 @@
 package pages.apple;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,15 +19,17 @@ public class TouchApplePage extends BasePage {
     private final By appleHeader = By.xpath("//h1[@class='changeName']");
     private final By appleCard = By.xpath("//div[@class='item product sku']");
 
-    public TouchApplePage applePageHeader(){
+    @Step("Сравнение Заголовка страницы")
+    public TouchApplePage appleSearchResult(String appleHeaderExpected){
         WebElement header = driver.findElement(appleHeader);
         waitElementIsVisible(header);
 
-        Assert.assertEquals(header.getText(), "Техника Apple");
+        Assert.assertEquals(header.getText(), appleHeaderExpected);
 
         return this;
     }
 
+    @Step("В каждом продукте на странице есть слово 'Apple'")
     public TouchApplePage checkIsAppleCards(){
 
         List<WebElement> appleCards = driver.findElements(appleCard);

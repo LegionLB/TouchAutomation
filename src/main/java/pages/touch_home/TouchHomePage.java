@@ -1,5 +1,6 @@
 package pages.touch_home;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ public class TouchHomePage extends BasePage {
     private final By findButton = By.xpath("//input[@id='goSearch']");
     private final By appleFromCategoryButton = By.xpath("//li[@class='eChild'][1]");
 
+    @Step("Для поиска вводим {input}")
     public TouchHomePage inputToSearch(String input){
         WebElement searchField = driver.findElement(searchingField);
         waitElementIsVisible(searchField).sendKeys(input);
@@ -22,14 +24,14 @@ public class TouchHomePage extends BasePage {
         return this;
     }
 
-
+    @Step("Нажать на кнопку поиска")
     public TouchHomePage clickToSearch(){
         WebElement searchButton = driver.findElement(findButton);
         waitElementIsVisible(searchButton).click();
 
         return this;
     }
-
+    @Step("Нажать на кнопку 'Apple' в меню категорий")
     public TouchHomePage goToApplePage(){
         WebElement applePageButton = driver.findElement(appleFromCategoryButton);
         waitElementIsVisible(applePageButton).click();

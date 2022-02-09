@@ -22,7 +22,7 @@ public class BaseTest {
     protected TouchListingPage touchListingPage =  new TouchListingPage(driver);
     protected TouchApplePage touchApplePage = new TouchApplePage(driver);
 
-    @AfterTest  //TestNG - аннотация - действие совершается после каждого теста
+    @AfterTest(description = "Очищаем куки и кэш")  //TestNG - аннотация - действие совершается после каждого теста
     public void clearCookiesAndLocalStorage(){
         if (CLEAR_COOKIES_AND_STORAGE){
             JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
@@ -31,16 +31,10 @@ public class BaseTest {
         }
     }
 
-    @AfterSuite (alwaysRun = true) //TestNG - аннотация - действие совершается после каждого набора, alwaysRun = true - выполнение в любом случае
+    @AfterTest (alwaysRun = true, description = "Закрываем браузер") //TestNG - аннотация - действие совершается после каждого набора, alwaysRun = true - выполнение в любом случае
     public void close(){
         if (HOLD_BROWSER_OPEN){
             driver.quit();
         }
     }
-
-    @AfterTest
-    public void closeBrowser(){
-        driver.quit();
-    }
-
 }

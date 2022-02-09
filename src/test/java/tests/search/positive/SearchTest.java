@@ -1,0 +1,24 @@
+package tests.search.positive;
+
+import io.qameta.allure.Feature;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import tests.base.BaseTest;
+
+import static constants.Constant.SearchItems.IPHONE;
+import static constants.Constant.Urls.TOUCH_HOME_PAGE;
+
+@Feature("Тестирование поиска")
+public class SearchTest extends BaseTest {
+
+    @Test(description = "Проверка перенаправления на страницу с указанным параметром поиска") //TestNG - аннотация, показывает что это Тест
+    public void checkIsRedirectToListing(){
+        basePage.open(TOUCH_HOME_PAGE);
+
+        touchHomePage.inputToSearch(IPHONE).clickToSearch();
+
+        touchListingPage.checkSearchingResult(IPHONE);
+
+        touchListingPage.checkAmountOfCards();
+    }
+}
