@@ -28,7 +28,7 @@ public class TouchListingPage extends BasePage {
 
     }
 
-    @Step("Сравниваем результат поиска с текстом поиска {searchItem}")
+    @Step("Сравниваем результат поиска с текстом поиска '{searchItem}'")
     public TouchListingPage checkSearchingResult(String searchItem){
 
         WebElement result = driver.findElement(searchResult);
@@ -37,5 +37,4 @@ public class TouchListingPage extends BasePage {
         return this;
 
     }
-
 }
