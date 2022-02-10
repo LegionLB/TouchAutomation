@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Search Test Suite">
+    <test name="Тестирование Поиск">
+        <classes>
+            <class name="tests.search.positive.SearchTest"/>
+        </classes>
+    </test>
+</suite>

@@ -15,7 +15,6 @@ public class ApplePageTest extends BaseTest {
     @Description("Переход на страницу продукции Apple с главной страницы")  // Описание теста в репорте
     @Severity(SeverityLevel.TRIVIAL) // severity теста
     @Attachment
-//    @Story("Открытие страницы продукции Apple Story")
     public void checkIsItApplePage(){
         basePage.open(TOUCH_HOME_PAGE);
 

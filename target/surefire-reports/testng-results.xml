@@ -2,44 +2,52 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-09T16:46:07 EET" name="All Test Suite" finished-at="2022-02-09T16:46:28 EET" duration-ms="21219">
+  <suite started-at="2022-02-10T08:53:46 EET" name="Apple Page Test Suite" finished-at="2022-02-10T08:53:52 EET" duration-ms="6311">
     <groups>
     </groups>
-    <test started-at="2022-02-09T16:46:07 EET" name="Тестирование Поиск" finished-at="2022-02-09T16:46:15 EET" duration-ms="8211">
-      <class name="tests.search.positive.SearchTest">
-        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.search.positive.SearchTest@260d48f5]" started-at="2022-02-09T16:46:07 EET" name="checkIsRedirectToListing" description="Проверка перенаправления на страницу с указанным параметром поиска" finished-at="2022-02-09T16:46:15 EET" duration-ms="8015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkIsRedirectToListing -->
-        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.search.positive.SearchTest@260d48f5]" started-at="2022-02-09T16:46:15 EET" name="clearCookiesAndLocalStorage" description="Очищаем куки и кэш" finished-at="2022-02-09T16:46:15 EET" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearCookiesAndLocalStorage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.search.positive.SearchTest@260d48f5]" started-at="2022-02-09T16:46:15 EET" name="close" description="Закрываем браузер" finished-at="2022-02-09T16:46:15 EET" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- tests.search.positive.SearchTest -->
-    </test> <!-- Тестирование Поиск -->
-    <test started-at="2022-02-09T16:46:21 EET" name="Тестирование Apple страницы" finished-at="2022-02-09T16:46:28 EET" duration-ms="7967">
+    <test started-at="2022-02-10T08:53:46 EET" name="Тестирование Apple страницы" finished-at="2022-02-10T08:53:52 EET" duration-ms="6311">
       <class name="tests.applePageTest.positive.ApplePageTest">
-        <test-method signature="checkIsItApplePage()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@280484c7]" started-at="2022-02-09T16:46:21 EET" name="checkIsItApplePage" description="Открытие страницы продукции Apple" finished-at="2022-02-09T16:46:25 EET" duration-ms="4638" status="PASS">
+        <test-method signature="checkIsItApplePage()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@258a8584]" started-at="2022-02-10T08:53:46 EET" name="checkIsItApplePage" description="Открытие страницы продукции Apple" finished-at="2022-02-10T08:53:49 EET" duration-ms="3135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkIsItApplePage -->
-        <test-method signature="checkThatAllProductsHasAWordAppleInName()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@280484c7]" started-at="2022-02-09T16:46:25 EET" name="checkThatAllProductsHasAWordAppleInName" description="Проверка что все продукты на странице имееют в названии &#039;Apple&#039;" finished-at="2022-02-09T16:46:28 EET" duration-ms="3198" status="PASS">
+        <test-method signature="checkThatAllProductsHasAWordAppleInName()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@258a8584]" started-at="2022-02-10T08:53:49 EET" name="checkThatAllProductsHasAWordAppleInName" description="Проверка что все продукты на странице имееют в названии &#039;Apple&#039;" finished-at="2022-02-10T08:53:52 EET" duration-ms="3154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatAllProductsHasAWordAppleInName -->
-        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@280484c7]" started-at="2022-02-09T16:46:28 EET" name="clearCookiesAndLocalStorage" description="Очищаем куки и кэш" finished-at="2022-02-09T16:46:28 EET" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@258a8584]" started-at="2022-02-10T08:53:52 EET" name="clearCookiesAndLocalStorage" description="Очищаем куки и кэш" finished-at="2022-02-10T08:53:52 EET" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearCookiesAndLocalStorage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@280484c7]" started-at="2022-02-09T16:46:28 EET" name="close" description="Закрываем браузер" finished-at="2022-02-09T16:46:28 EET" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.applePageTest.positive.ApplePageTest@258a8584]" started-at="2022-02-10T08:53:57 EET" name="close" description="Закрываем браузер" finished-at="2022-02-10T08:53:57 EET" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- tests.applePageTest.positive.ApplePageTest -->
     </test> <!-- Тестирование Apple страницы -->
+  </suite> <!-- Apple Page Test Suite -->
+  <suite started-at="2022-02-10T08:53:36 EET" name="Search Test Suite" finished-at="2022-02-10T08:53:41 EET" duration-ms="5044">
+    <groups>
+    </groups>
+    <test started-at="2022-02-10T08:53:36 EET" name="Тестирование Поиск" finished-at="2022-02-10T08:53:41 EET" duration-ms="5044">
+      <class name="tests.search.positive.SearchTest">
+        <test-method signature="checkIsRedirectToListing()[pri:0, instance:tests.search.positive.SearchTest@1a84a8b2]" started-at="2022-02-10T08:53:36 EET" name="checkIsRedirectToListing" description="Проверка перенаправления на страницу с указанным параметром поиска" finished-at="2022-02-10T08:53:41 EET" duration-ms="4960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIsRedirectToListing -->
+        <test-method is-config="true" signature="clearCookiesAndLocalStorage()[pri:0, instance:tests.search.positive.SearchTest@1a84a8b2]" started-at="2022-02-10T08:53:41 EET" name="clearCookiesAndLocalStorage" description="Очищаем куки и кэш" finished-at="2022-02-10T08:53:41 EET" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookiesAndLocalStorage -->
+        <test-method is-config="true" signature="close()[pri:0, instance:tests.search.positive.SearchTest@1a84a8b2]" started-at="2022-02-10T08:53:46 EET" name="close" description="Закрываем браузер" finished-at="2022-02-10T08:53:46 EET" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.search.positive.SearchTest -->
+    </test> <!-- Тестирование Поиск -->
+  </suite> <!-- Search Test Suite -->
+  <suite started-at="2022-02-10T08:53:57 EET" name="All Test Suite" finished-at="2022-02-10T08:53:57 EET" duration-ms="0">
+    <groups>
+    </groups>
   </suite> <!-- All Test Suite -->
 </testng-results>

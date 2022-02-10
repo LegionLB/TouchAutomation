@@ -31,7 +31,7 @@ public class BaseTest {
         }
     }
 
-    @AfterTest (alwaysRun = true, description = "Закрываем браузер") //TestNG - аннотация - действие совершается после каждого набора, alwaysRun = true - выполнение в любом случае
+    @AfterSuite (alwaysRun = true, description = "Закрываем браузер") //TestNG - аннотация - действие совершается после каждого набора, alwaysRun = true - выполнение в любом случае
     public void close(){
         if (HOLD_BROWSER_OPEN){
             driver.quit();
