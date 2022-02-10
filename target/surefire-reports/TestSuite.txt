@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.513 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.294 s <<< FAILURE! - in TestSuite
+tests.search.positive.SearchTest.checkIsRedirectToListing  Time elapsed: 9.828 s  <<< FAILURE!
+java.lang.AssertionError: expected [Результаты поиска - «iPhone»] but found [Результаты поиска - «itemToSearch»]
+	at tests.search.positive.SearchTest.checkIsRedirectToListing(SearchTest.java:24)
+

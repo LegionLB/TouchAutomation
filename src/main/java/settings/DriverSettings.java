@@ -1,4 +1,4 @@
-package common;
+package settings;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,10 +7,10 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-import static common.Config.PLATFORM_AND_BROWSER;
+import static settings.Config.PLATFORM_AND_BROWSER;
 import static constants.Constant.TimeoutVariable.IMPLICITLY_WAIT;
 
-public class CommonActions {
+public class DriverSettings {
     // Инициализируем вебдрайвер
     public static WebDriver createDriver(){
         WebDriver driver = null; // Объявляем вебдрайвер
@@ -20,7 +20,7 @@ public class CommonActions {
             case "mac_chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
+                options.addArguments("--headless"); //отключение UI хрома
                 driver = new ChromeDriver();
                 break;
             default:

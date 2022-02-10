@@ -16,7 +16,7 @@ public class BasePage {
         this.driver = driver;
     }
 
-    @Step("Открыть страницу '{url}'")
+    @Step("Открыть страницу {url}")
     public void open(String url) {
         driver.get(url);
     }

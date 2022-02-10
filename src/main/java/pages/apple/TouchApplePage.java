@@ -19,7 +19,7 @@ public class TouchApplePage extends BasePage {
     private final By appleHeader = By.xpath("//h1[@class='changeName']");
     private final By appleCard = By.xpath("//div[@class='item product sku']");
 
-    @Step("Сравнение Заголовка страницы '{appleHeaderExpected}'")
+    @Step("Сравнение Заголовка страницы {appleHeaderExpected}")
     public TouchApplePage appleSearchResult(String appleHeaderExpected){
         WebElement header = driver.findElement(appleHeader);
         waitElementIsVisible(header);

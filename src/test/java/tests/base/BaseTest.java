@@ -1,7 +1,6 @@
 package tests.base;
 
-import common.CommonActions;
-import org.openqa.selenium.JavascriptException;
+import settings.DriverSettings;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
@@ -11,12 +10,12 @@ import pages.base.BasePage;
 import pages.listing.TouchListingPage;
 import pages.touch_home.TouchHomePage;
 
-import static common.Config.CLEAR_COOKIES_AND_STORAGE;
-import static common.Config.HOLD_BROWSER_OPEN;
+import static settings.Config.CLEAR_COOKIES_AND_STORAGE;
+import static settings.Config.HOLD_BROWSER_OPEN;
 
 public class BaseTest {
 
-    protected WebDriver driver = CommonActions.createDriver();
+    protected WebDriver driver = DriverSettings.createDriver();
     protected BasePage basePage = new BasePage(driver);
     protected TouchHomePage touchHomePage = new TouchHomePage(driver);
     protected TouchListingPage touchListingPage =  new TouchListingPage(driver);

@@ -21,7 +21,7 @@ public class SearchTest extends BaseTest {
 
         touchHomePage.inputToSearch(itemToSearch).clickToSearch();
 
-        touchListingPage.checkSearchingResult(itemToSearch); //put here expected result
+        touchListingPage.checkSearchingResult("itemToSearch"); //put here expected result
 
         touchListingPage.checkAmountOfCards(); // amount of cards
     }
